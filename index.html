@@ -179,7 +179,11 @@
                 clear background color to white
                 
             */
-            alert("clearAll()");
+            const myNodeList = document.querySelectorAll("div.creature");
+            myNodeList.forEach(function(el){
+                el.style.backgroundColor = "#fff";
+                el.style.border = "1px solid #000";
+            });
         }//end clearAll()
 
     </script>    
